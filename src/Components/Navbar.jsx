@@ -6,7 +6,7 @@ function Navbar() {
       <ul>
         <li>
           <a
-            href="http://github.com/"
+            href="http://github.com/rainboestrykr/markdownez"
             target="_blank"
             rel="noopener noreferrer"
             className="github_logo"
@@ -29,7 +29,7 @@ function Navbar() {
           </a>
         </li>
         <li className="logo">
-          <h1> MD Editor<span className="highlight">.</span> </h1>
+          <h1> MarkdownEz<span className="highlight">.</span> </h1>
         </li>
         <li className="autosave">
           <svg
