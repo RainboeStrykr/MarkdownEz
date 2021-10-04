@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  min-height: 550px;
+  overflow: hidden;
+  background-color: #0d0d0d;
+}
+
+nav {
+  background-color: #0d0d0d;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 10px 35px;
+  border: 1px solid #000000;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+nav ul li .github_logo {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 26px;
+}
+
+nav ul li .github_logo svg {
+  height: 100%;
+  display: block;
+}
+
+nav ul li .github_logo svg path {
+  fill: white;
+}
+
+nav ul li h1 {
+  padding-left: 77px;
+  cursor: pointer;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 21px;
+  position: relative;
+  font-weight: 700;
+}
+
+nav ul .autosave {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3px;
+}
+
+nav ul .autosave svg {
+  height: 18px;
+}
+
+nav ul .autosave svg path {
+  fill: #35ff69;
+}
+
+nav ul .autosave .autosave_txt {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #35ff69;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 90vh;
+}
+
+.wrapper .input_field,
+.wrapper .output {
+  width: 100%;
+  height: 100%;
+  background-color: #110f0f;
+  color: #e2e2e2;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+}
+
+.wrapper .input_field textarea,
+.wrapper .input_field .output_box,
+.wrapper .output textarea,
+.wrapper .output .output_box {
+  width: 100%;
+  height: 90vh;
+  max-height: 1100px;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: scroll;
+  padding: 20px 30px;
+  line-height: 1.5;
+  color: white;
+  border-bottom: 1px solid #000000;
+}
+
+.wrapper .input_field h1,
+.wrapper .input_field h2,
+.wrapper .input_field h3,
+.wrapper .input_field h4,
+.wrapper .output h1,
+.wrapper .output h2,
+.wrapper .output h3,
+.wrapper .output h4 {
+  font-weight: 600;
+}
+
+.wrapper .input_field h1,
+.wrapper .input_field h2,
+.wrapper .input_field h3,
+.wrapper .input_field h4,
+.wrapper .input_field h5,
+.wrapper .input_field p,
+.wrapper .output h1,
+.wrapper .output h2,
+.wrapper .output h3,
+.wrapper .output h4,
+.wrapper .output h5,
+.wrapper .output p {
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.wrapper .input_field h1,
+.wrapper .output h1 {
+  font-size: 36px;
+  position: relative;
+  margin: 30px 0 40px;
+}
+
+.wrapper .input_field h1::after,
+.wrapper .output h1::after {
+  position: absolute;
+  top: 120%;
+  content: "";
+  left: 0;
+  width: 100%;
+  background-color: #7a7a7a;
+  height: 1px;
+}
+
+.wrapper .input_field h2,
+.wrapper .output h2 {
+  font-size: 30px;
+}
+
+.wrapper .input_field h3,
+.wrapper .output h3 {
+  font-size: 26px;
+}
+
+.wrapper .input_field h4,
+.wrapper .output h4 {
+  font-size: 22px;
+}
+
+.wrapper .input_field h5,
+.wrapper .output h5 {
+  font-size: 20px;
+}
+
+.wrapper .input_field a,
+.wrapper .output a {
+  color: #35ff69;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.wrapper .input_field ul,
+.wrapper .input_field ol,
+.wrapper .output ul,
+.wrapper .output ol {
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.wrapper .input_field li,
+.wrapper .output li {
+  line-height: 1.6;
+}
+
+.wrapper .input_field li ul,
+.wrapper .input_field li ul,
+.wrapper .output li ul,
+.wrapper .output li ul {
+  margin-left: 24px;
+}
+
+.wrapper .input_field p,
+.wrapper .input_field ul,
+.wrapper .input_field ol,
+.wrapper .output p,
+.wrapper .output ul,
+.wrapper .output ol {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 580px;
+  color: #f1f1f1;
+}
+
+.wrapper .input_field code,
+.wrapper .output code {
+  padding: 2px 6px;
+  border: 1px solid #000000;
+  background-color: #1d1a1a;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.7;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.wrapper .input_field pre,
+.wrapper .output pre {
+  padding: 0px 24px;
+  max-width: 800px;
+  white-space: pre-wrap;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  background-color: #1d1a1a;
+  margin: 10px 0 25px;
+}
+
+.wrapper .input_field pre code,
+.wrapper .output pre code {
+  padding: 0;
+  background-color: none;
+  border: none;
+}
+
+.wrapper .input_field aside,
+.wrapper .output aside {
+  display: block;
+  float: right;
+  width: 390px;
+}
+
+.wrapper .input_field blockquote,
+.wrapper .output blockquote {
+  margin: 1em 2em;
+  max-width: 476px;
+}
+
+.wrapper .input_field blockquote p,
+.wrapper .output blockquote p {
+  color: #2a2a2a;
+  max-width: 460px;
+}
+
+.wrapper .input_field hr,
+.wrapper .output hr {
+  width: 540px;
+  text-align: left;
+  margin: 0 auto 0 0;
+  color: #646464;
+}
+
+.wrapper .input_field table,
+.wrapper .output table {
+  border-collapse: collapse;
+  margin: 1em 1em;
+  border: 1px solid #a3a3a3;
+  margin-bottom: 40px;
+}
+
+.wrapper .input_field table thead,
+.wrapper .output table thead {
+  background-color: #383838;
+}
+
+.wrapper .input_field table thead td,
+.wrapper .output table thead td {
+  color: #666;
+}
+
+.wrapper .input_field table td,
+.wrapper .output table td {
+  padding: 0.5em 1em;
+  border: 1px solid #9b9b9b;
+}
+
+.wrapper .input_field textarea {
+  font-size: 18px;
+  background-color: #1b181a;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid #000000;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .wrapper .input_field,
+  .wrapper .output {
+    height: 100%;
+    min-height: 500px;
+  }
+  .wrapper .input_field textarea,
+  .wrapper .input_field .output_box,
+  .wrapper .output textarea,
+  .wrapper .output .output_box {
+    height: 100%;
+  }
+  .wrapper .input_field .output_box,
+  .wrapper .output .output_box {
+    border-bottom: 3px solid #000;
+  }
+  .wrapper .input_field {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .wrapper .output {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    padding: 10px 25px;
+  }
+  nav ul li .github_logo {
+    height: 22px;
+  }
+  nav ul li h1 {
+    font-size: 18px;
+    padding-left: 0px;
+  }
+  nav ul .autosave svg {
+    height: 20px;
+  }
+  nav ul .autosave .autosave_txt {
+    display: none;
+    font-size: 12px;
+  }
+  .wrapper .input_field,
+  .wrapper .output {
+    height: 50vh;
+    min-height: 300px;
+  }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #3d3d3d #000000;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  border-radius: 2px;
+  border: 2px solid #000000;
+}
+/*# sourceMappingURL=style.css.map */
