@@ -9,7 +9,7 @@ function App() {
   const [MD, SetMD] = useState(`
 # Welcome to MD Editor.
 
-This editor is developed by Devang Saklani from **INDIA**  ( as a side project ).
+This is a side project of Abhiraj Bhowmick from **INDIA**  ( as a side project ).
  
 *Basic usage:*
 # Heading 1
